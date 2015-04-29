@@ -326,6 +326,43 @@ Verbs are actions that are performed on an object.
 * Sharing Collection
 * Sharing Item in Collection
 
+## Associating Social Media Statement with a Course and Instructor
+* Associating with an Instructor
+```json
+{
+  "actor": {
+    "objecttype": "Agent",
+    "account": {
+      "homepage": "http://www.randomsyntax.com/about",
+      "name": "aneesha"
+    }
+  },
+  "verb": {
+    "id": "http://activitystrea.ms/schema/1.0/create",
+    "display": {
+      "en-US": "Create"
+    }
+  },
+  "object": {
+    "id": "https://twitter.com/aneesha/status/593190361255677952",
+    "objectType": "Article",
+    "definition": {
+      "name": {
+        "en-US": "Blog post text"
+      },
+      "type": "http://activitystrea.ms/schema/1.0/article"
+    }
+  },
+  "context": {
+    "instructor": {
+      "name": "Aneesha Bakharia",
+      "mbox": "test@mail.com"
+    },
+    "contextActivities": {}
+  }
+}
+```
+
 ## Useful TinCan API Recipes
 * [SCORM to Tincan API Cookbook](http://tincanapi.com/scorm-to-tin-can-api-cookbook/)
 * [xAPI community of practice for user generated course content (UGCC)](https://github.com/ht2/UGCC-CoP)
