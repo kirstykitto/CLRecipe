@@ -187,9 +187,95 @@ Verbs are actions that are performed on an object.
 
 ### Content Authoring
 * Blog Post
+```json
+{
+  "actor": {
+    "objecttype": "Agent",
+    "account": {
+      "homepage": "http://www.randomsyntax.com/about",
+      "name": "aneesha"
+    }
+  },
+  "verb": {
+    "id": "http://activitystrea.ms/schema/1.0/create",
+    "display": {
+      "en-US": "Create"
+    }
+  },
+  "object": {
+    "id": "http://www.randomsyntax.com/post1",
+    "objectType": "Article",
+    "definition": {
+      "name": {
+        "en-US": "Blog post text"
+      },
+      "type": "http://activitystrea.ms/schema/1.0/article"
+    }
+  },
+  "context": {
+    "contextActivities": {}
+  }
+}
+```
+
+* Blog Post with Tags
+```json
+{
+  "actor": {
+    "objecttype": "Agent",
+    "account": {
+      "homepage": "http://www.randomsyntax.com/about",
+      "name": "aneesha"
+    }
+  },
+  "verb": {
+    "id": "http://activitystrea.ms/schema/1.0/create",
+    "display": {
+      "en-US": "Create"
+    }
+  },
+  "object": {
+    "id": "http://www.randomsyntax.com/post2",
+    "objectType": "Article",
+    "definition": {
+      "name": {
+        "en-US": "Blog post text"
+      },
+      "type": "http://activitystrea.ms/schema/1.0/article"
+    }
+  },
+  "context": {
+    "contextActivities": {
+      "other": [
+        {
+          "id": "http://id.tincanapi.com/activity/tags/tincan",
+          "objecttype": "Activity",
+          "definition": {
+            "type": "http://id.tincanapi.com/activitytype/tag",
+            "name": {
+              "und": "tag2"
+            }
+          }
+        },
+        {
+          "id": "http://id.tincanapi.com/activity/tags/tincan",
+          "objecttype": "Activity",
+          "definition": {
+            "type": "http://id.tincanapi.com/activitytype/tag",
+            "name": {
+              "und": "tag2"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+```
+
 * Discussion Thread Associated with Blog Post (could be linear or a tree)
 
-### Collaborative Content Authoring
+### Collaborative Content Authoring (Todo)
 * Adding Content
 * Editing Content
 * Deleting Content
@@ -197,7 +283,7 @@ Verbs are actions that are performed on an object.
 * Tagging Content
 * Tagging Collections
 
-### Content Curation
+### Content Curation (Todo)
 * Create Collection
 * Adding Media to Collection
 * Tagging Media in a Collection
