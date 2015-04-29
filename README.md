@@ -49,7 +49,32 @@ Verbs are actions that are performed on an object.
 * Create a Tweet
 
 ```json
-{"actor":{"objecttype":"Agent","account":{"homepage":"http://www.twitter.com/aneesha","name":"aneesha"}},"verb":{"id":"http://activitystrea.ms/schema/1.0/create","display":{"en-US":"Create"}},"object":{"id":"https://twitter.com/aneesha/status/593190361255677952","objectType":"Note","definition":{"name":{"en-US":"Just a test tweet."},"type":"http://activitystrea.ms/schema/1.0/note"}},"context":{}}
+{
+  "actor": {
+    "objecttype": "Agent",
+    "account": {
+      "homepage": "http://www.twitter.com/aneesha",
+      "name": "aneesha"
+    }
+  },
+  "verb": {
+    "id": "http://activitystrea.ms/schema/1.0/create",
+    "display": {
+      "en-US": "Create"
+    }
+  },
+  "object": {
+    "id": "https://twitter.com/aneesha/status/593190361255677952",
+    "objectType": "Note",
+    "definition": {
+      "name": {
+        "en-US": "i'm having the worst luck with ordering electronic components online - orders arrive but are always missing crucial things"
+      },
+      "type": "http://activitystrea.ms/schema/1.0/note"
+    }
+  },
+  "context": {}
+}
 ```
 
 * Retweet
