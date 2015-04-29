@@ -184,6 +184,41 @@ Verbs are actions that are performed on an object.
 * Retweet with Comment
 
 * Favorite (or Like) a Tweet
+```json
+{
+  "actor": {
+    "objecttype": "Agent",
+    "account": {
+      "homepage": "http://www.twitter.com/aneesha",
+      "name": "aneesha"
+    }
+  },
+  "verb": {
+    "id": "http://activitystrea.ms/schema/1.0/like",
+    "display": {
+      "en-US": "Like"
+    }
+  },
+  "object": {
+    "id": "https://twitter.com/aneesha/status/593190361255677952",
+    "objectType": "Note",
+    "definition": {
+      "name": {
+        "en-US": ""
+      },
+      "type": "http://activitystrea.ms/schema/1.0/note"
+    }
+  },
+  "context": {
+    "contextActivities": {
+      "parent": {
+        "id": "https://twitter.com/aneesha/status/593190361255677952",
+        "objecttype": "Note"
+      }
+    }
+  }
+}
+```
 
 ### Content Authoring
 * Blog Post
@@ -290,3 +325,9 @@ Verbs are actions that are performed on an object.
 * Tagging Collection
 * Sharing Collection
 * Sharing Item in Collection
+
+## Useful TinCan API Recipes
+* [SCORM to Tincan API Cookbook](http://tincanapi.com/scorm-to-tin-can-api-cookbook/)
+* [xAPI community of practice for user generated course content (UGCC)](https://github.com/ht2/UGCC-CoP)
+* [xAPI Community of Practice for Mozilla Open Badges](https://github.com/ht2/UGCC-CoP)
+* [Verbs and Activity Types used in Curatr](http://www.curatr3.com/admin-guide/#document-12)
