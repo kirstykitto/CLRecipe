@@ -77,11 +77,76 @@ Verbs are actions that are performed on an object.
 }
 ```
 
+* Include Hashtag/s and @mention/s in a Microblog Post
+
+```json
+{
+  "actor": {
+    "objecttype": "Agent",
+    "account": {
+      "homepage": "http://www.twitter.com/aneesha",
+      "name": "aneesha"
+    }
+  },
+  "verb": {
+    "id": "http://activitystrea.ms/schema/1.0/create",
+    "display": {
+      "en-US": "Create"
+    }
+  },
+  "object": {
+    "id": "https://twitter.com/aneesha/status/593190361255677952",
+    "objectType": "Note",
+    "definition": {
+      "name": {
+        "en-US": "i'm having the worst luck with ordering electronic components online - orders arrive but are always missing crucial things"
+      },
+      "type": "http://activitystrea.ms/schema/1.0/note"
+    }
+  },
+  "context": {
+    "contextActivities": {
+      "other": [
+        {
+          "id": "http://id.tincanapi.com/activity/tags/tincan",
+          "objecttype": "Activity",
+          "definition": {
+            "type": "http://id.tincanapi.com/activitytype/tag",
+            "name": {
+              "und": "tag2"
+            }
+          }
+        },
+        {
+          "id": "http://id.tincanapi.com/activity/tags/tincan",
+          "objecttype": "Activity",
+          "definition": {
+            "type": "http://id.tincanapi.com/activitytype/tag",
+            "name": {
+              "und": "tag2"
+            }
+          }
+        },
+        {
+          "id": "http://id.tincanapi.com/activity/tags/tincan",
+          "objecttype": "Activity",
+          "definition": {
+            "type": "http://id.tincanapi.com/activitytype/tag",
+            "name": {
+              "und": "@aneesha"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+```
+
 * Retweet
 * Retweet with Comment
-* Include a Hashtag/s
-* Include @mention/s
-* Favourite a Tweet
+
+* Favorite a Tweet
 
 ### Content Authoring
 * Blog Post
