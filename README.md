@@ -20,7 +20,8 @@ Verbs are actions that are performed on an object.
 | Add  | Indicates that the actor has created the object.  | [Activity Stream Schema](http://activitystrea.ms/head/activity-schema.html#verbs) |
 | Like  |  Indicates that the actor marked the object as an item of special interest. The "like" verb is considered to be an alias of "favorite". The two verb are semantically identical. | [Activity Stream Schema](http://activitystrea.ms/head/activity-schema.html#verbs) |
 | Share  | Indicates that the actor has called out the object to readers. In most cases, the actor did not create the object being shared, but is instead drawing attention to it.  | [Activity Stream Schema](http://activitystrea.ms/head/activity-schema.html#verbs) |
-| Tag  | Activity generally used in the "other" or "grouping" Context Activities lists to mark a statement as being related to a particular subject area. Implemented as a one word identifier used for search filtering or tag cloud generation. Does not include hashtagging for tweets. | [TINCAN API](http://id.tincanapi.com/activitytype/tag) |
+| Tag  | Activity generally used in the "other" or "grouping" Context Activities lists to mark a statement as being related to a particular subject area. Implemented as a one word identifier used for search filtering or tag cloud generation. Includes hashtagging for tweets. | [TINCAN API](http://id.tincanapi.com/activitytype/tag) |
+| Rate  | Value is an object that is similar to the Result's "score" property in that it should include a 'raw' value as well as 'min' and 'max' range indicators. | [TINCAN API](http://id.tincanapi.com/extension/quality-rating) |
 
 ## Mapping Social Media Platforms to Objects and Verbs
 
