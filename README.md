@@ -73,7 +73,10 @@ Verbs are actions that are performed on an object.
       "type": "http://activitystrea.ms/schema/1.0/note"
     }
   },
-  "context": {}
+  "context": {
+    "platform": "Twitter",
+    "contextActivities": {}
+  }
 }
 ```
 
@@ -105,6 +108,7 @@ Verbs are actions that are performed on an object.
     }
   },
   "context": {
+    "platform": "Twitter",
     "contextActivities": {
       "other": [
         {
@@ -113,7 +117,7 @@ Verbs are actions that are performed on an object.
           "definition": {
             "type": "http://id.tincanapi.com/activitytype/tag",
             "name": {
-              "und": "tag2"
+              "en-US": "tag2"
             }
           }
         },
@@ -123,7 +127,7 @@ Verbs are actions that are performed on an object.
           "definition": {
             "type": "http://id.tincanapi.com/activitytype/tag",
             "name": {
-              "und": "tag2"
+              "en-US": "tag2"
             }
           }
         },
@@ -133,7 +137,7 @@ Verbs are actions that are performed on an object.
           "definition": {
             "type": "http://id.tincanapi.com/activitytype/tag",
             "name": {
-              "und": "@aneesha"
+              "en-US": "@aneesha"
             }
           }
         }
@@ -171,6 +175,7 @@ Verbs are actions that are performed on an object.
     }
   },
   "context": {
+    "platform": "Twitter",
     "contextActivities": {
       "parent": {
         "id": "https://twitter.com/aneesha/status/593190361255677952",
@@ -210,6 +215,7 @@ Verbs are actions that are performed on an object.
     }
   },
   "context": {
+    "platform": "Twitter",
     "contextActivities": {
       "parent": {
         "id": "https://twitter.com/aneesha/status/593190361255677952",
@@ -238,7 +244,7 @@ Verbs are actions that are performed on an object.
     }
   },
   "object": {
-    "id": "http://www.randomsyntax.com/post1",
+    "id": "https://twitter.com/aneesha/status/593190361255677952",
     "objectType": "Article",
     "definition": {
       "name": {
@@ -248,6 +254,7 @@ Verbs are actions that are performed on an object.
     }
   },
   "context": {
+    "platform": "WordPress",
     "contextActivities": {}
   }
 }
@@ -270,7 +277,7 @@ Verbs are actions that are performed on an object.
     }
   },
   "object": {
-    "id": "http://www.randomsyntax.com/post2",
+    "id": "https://twitter.com/aneesha/status/593190361255677952",
     "objectType": "Article",
     "definition": {
       "name": {
@@ -280,6 +287,11 @@ Verbs are actions that are performed on an object.
     }
   },
   "context": {
+    "instructor": {
+      "name": "",
+      "mbox": ""
+    },
+    "platform": "WordPress",
     "contextActivities": {
       "other": [
         {
@@ -288,7 +300,7 @@ Verbs are actions that are performed on an object.
           "definition": {
             "type": "http://id.tincanapi.com/activitytype/tag",
             "name": {
-              "und": "tag2"
+              "en-US": "tag2"
             }
           }
         },
@@ -298,7 +310,7 @@ Verbs are actions that are performed on an object.
           "definition": {
             "type": "http://id.tincanapi.com/activitytype/tag",
             "name": {
-              "und": "tag2"
+              "en-US": "tag2"
             }
           }
         }
@@ -326,7 +338,7 @@ Verbs are actions that are performed on an object.
 * Sharing Collection
 * Sharing Item in Collection
 
-## Associating Social Media Statement with a Course and Instructor
+## Associating Social Media Statement with a Course, Team (or Group) and Instructor
 * Associating with an Instructor
 ```json
 {
@@ -358,6 +370,7 @@ Verbs are actions that are performed on an object.
       "name": "Aneesha Bakharia",
       "mbox": "test@mail.com"
     },
+    "platform": "WordPress",
     "contextActivities": {}
   }
 }
@@ -390,12 +403,50 @@ Verbs are actions that are performed on an object.
     }
   },
   "context": {
+    "platform": "WordPress",
     "contextActivities": {
       "group": {
         "id": "ABC600",
-        "objecttype": "Course"
+        "type": "http://adlnet.gov/expapi/activities/course"
       }
     }
+  }
+}
+```
+
+* Associate with a Team or Group
+```json
+{
+  "actor": {
+    "objecttype": "Agent",
+    "account": {
+      "homepage": "http://www.randomsyntax.com/about",
+      "name": "aneesha"
+    }
+  },
+  "verb": {
+    "id": "http://activitystrea.ms/schema/1.0/create",
+    "display": {
+      "en-US": "Create"
+    }
+  },
+  "object": {
+    "id": "https://twitter.com/aneesha/status/593190361255677952",
+    "objectType": "Article",
+    "definition": {
+      "name": {
+        "en-US": "Blog post text"
+      },
+      "type": "http://activitystrea.ms/schema/1.0/article"
+    }
+  },
+  "context": {
+    "platform": "WordPress",
+    "team": {
+      "name": "Tut Group 1",
+      "objectType": "Group"
+    },
+    "contextActivities": {}
   }
 }
 ```
@@ -405,3 +456,6 @@ Verbs are actions that are performed on an object.
 * [xAPI community of practice for user generated course content (UGCC)](https://github.com/ht2/UGCC-CoP)
 * [xAPI Community of Practice for Mozilla Open Badges](https://github.com/ht2/UGCC-CoP)
 * [Verbs and Activity Types used in Curatr](http://www.curatr3.com/admin-guide/#document-12)
+
+## References
+* [xAPI Specification](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md)
