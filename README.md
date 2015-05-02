@@ -19,6 +19,8 @@ Though social media platforms use different terminology, a common model of inter
 * a user sharing a post on their timeline (i.e. for their followers to view)
 * a user replying (and optionally including a comment) to a post
 
+![Social Media Model](https://github.com/kirstykitto/CLRecipe/blob/master/socialmediamodel.png)
+
 The CLRecipe provides the following guidelines for representing social media activity as xAPI statements:
 * That there is a distinction between Short Microblogging posts (i.e. using the Note object) and larger text articles (i.e. using the Article object).
 * The social media platform must be specified using the content.platform property.
