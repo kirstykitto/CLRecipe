@@ -26,6 +26,7 @@ Objects are items that are created on social media platforms. Blog posts, tweets
 | Collection | Represents a generic collection of objects of any type.  | [Activity Stream Schema](http://activitystrea.ms/head/activity-schema.html#collection) |
 
 Object use by platform:
+
 |   | Note | Article | Comment |
 | ------------- | ------------- | ------------- | ------------- |
 | Facebook Group | Yes | Yes | Yes |
@@ -46,6 +47,7 @@ Verbs are actions that are performed on an object.
 | Rate  | Value is an object that is similar to the Result's "score" property in that it should include a 'raw' value as well as 'min' and 'max' range indicators. | [TINCAN API](http://id.tincanapi.com/extension/quality-rating) |
 
 Verb use by platform:
+
 |   | Share | Tag | Hashtag | Mentions |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Facebook Group | Yes | Yes | Yes | Yes |
