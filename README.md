@@ -14,6 +14,14 @@ Though social media platforms use different terminology, a common model of inter
 * a user sharing a post on their timeline (i.e. for their followers to view)
 * a user replying (and optionally including a comment) to a post
 
+The CLRecipe provides the following guidelines for representing social media activity as xAPI statements:
+* That there is a distinction between Short Microblogging posts (i.e. using the Note object) and larger text articles (i.e. using the Article object).
+* The social media platform must be specified using the content.platform property.
+* Tags, hashtags and @mentions that are included in a post must be included as context.contextactivities.other. These items represent folksonomies created by the user. Context.contextactivities.category will be used by custom taxonomies that are created at a system level for enhanced reporting. 
+* Shares and likes must include a reference back to the object being shared or liked using contect.contextactivities.parent. If the referenced id does not exist in the LRS it can be inserted using a substatement to represent the object.
+* Social media can be associated with a course using context.contextactivities.group
+* Social media harvested from a group discssion area (i.e. Google+ Group or Facebook Group) must include context.team.
+
 ### Objects
 
 Objects are items that are created on social media platforms. Blog posts, tweets, homepage posts and curated media are all example objects. The CLRecipe makes a distinction between short Microblogging posts (i.e. using the Note object) and larger text articles (i.e. using the Article object).
@@ -56,7 +64,7 @@ Verb use by platform:
 | Blog | | Yes  |  |  |
 
 
-## Example TinCan Statements
+## Example xAPI Statements
 
 ### Microblogging
 * Create a Tweet
