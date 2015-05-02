@@ -5,6 +5,7 @@ The [Connected Learning Analytics Toolkit](https://github.com/kirstykitto) impor
 Todo List:
 - [ ] Add content curation examples
 - [ ] Add Contribute.md to outline how to contribute to project
+- [ ] Add examples as .json files
 
 ## Modeling Social Media Interaction as an xAPI statement
 
