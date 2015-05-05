@@ -22,12 +22,12 @@ Though social media platforms use different terminology, a common model of inter
 ![Social Media Model](https://github.com/kirstykitto/CLRecipe/blob/master/socialmediamodel.png)
 
 The CLRecipe provides the following guidelines for representing social media activity as xAPI statements:
-* That there is a distinction between Short Microblogging posts (i.e. using the Note object) and larger text articles (i.e. using the Article object).
-* The social media platform must be specified using the content.platform property.
-* Tags, hashtags and @mentions that are included in a post must be included as context.contextactivities.other. These items represent folksonomies created by the user. Context.contextactivities.category will be used by custom taxonomies that are created at a system level for enhanced reporting. 
-* Shares and likes must include a reference back to the object being shared or liked using contect.contextactivities.parent. If the referenced id does not exist in the LRS it can be inserted using a substatement to represent the object.
-* Social media can be associated with a course using context.contextactivities.group
-* Social media harvested from a group discssion area (i.e. Google+ Group or Facebook Group) must include context.team.
+* That there is a distinction between Short Microblogging posts (i.e. using the Note object) and larger text articles (i.e. using the Article object for pages and blog posts).
+* The social media platform must be specified using the *content.Platform* property.
+* Tags, hashtags and @mentions that are included in a post must be included as *context.contextActivities.Other*. These items represent folksonomies created by the user. *context.contextActivities.Category* will be used by custom taxonomies that are created at a system level for enhanced reporting. 
+* Shares and likes must include a reference back to the object being shared or liked using *contect.contextActivities.Parent*. If the referenced id does not exist in the LRS it can be inserted using a substatement to represent the object.
+* Social media can be associated with a course using *context.contextActivities.Group*
+* Social media harvested from a group discussion area (i.e. Google+ Group or Facebook Group) must include *context.Team*.
 
 ### Objects
 
