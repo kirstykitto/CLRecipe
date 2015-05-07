@@ -13,7 +13,7 @@ Todo List:
 The CLRecipe project:
 *  maps terminology from various social media platforms to a common set of objects and verb
 *  provides an xAPI Recipe for building xAPI statement for modeling social media interactions that include the relationship between social media posts (i.e. reply, share and like) so that advanced analytics (including content analysis and social network analysis) can be performed
-*  provides xAPI recipe examples for for Microblogging, Content Authoring, Content Collaboration and Content Curation
+*  provides xAPI recipe examples for Microblogging, Content Authoring, Content Collaboration and Content Curation
 
 Though social media platforms use different terminology, a common model of interaction exists (see figure below). The model involves:
 * A user can create a post.
