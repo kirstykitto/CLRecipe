@@ -29,18 +29,18 @@ The CLRecipe provides the following guidelines for representing social media act
 * Social media can be associated with a course using *context.contextActivities.Group*
 * Social media harvested from a group discussion area (i.e. Google+ Group or Facebook Group) must include *context.Team*.
 
-### Objects
+### Activities
 
-Objects are items that are created on social media platforms. Blog posts, tweets, homepage posts and curated media are all example objects. The CLRecipe makes a distinction between short Microblogging posts (i.e. using the Note object) and larger text articles (i.e. using the Article object).
+Activities are items that are created on social media platforms. Blog posts, tweets, homepage posts and curated media are all example objects. The CLRecipe makes a distinction between short Microblogging posts (i.e. using the Note object) and larger text articles (i.e. using the Article object).
 
-| Object  | Description | Source |
+| Activity  | Description | Source |
 | ------------- | ------------- | ------------- |
 | Note  | Represents a short-form text message. This object is intended primarily for use in "micro-blogging" scenarios and in systems where users are invited to publish short, often plain-text messages.  | [Activity Stream Schema](http://activitystrea.ms/head/activity-schema.html#note) |
 | Article | Represents objects such as news articles, knowledge base entries, or other similar construct. Such objects generally consist of paragraphs of text, in some cases incorporating embedded media such as photos and inline hyperlinks to other resources.  | [Activity Stream Schema](http://activitystrea.ms/head/activity-schema.html#article) |
 | Comment | Represents a textual response to another object. Objects of this type MAY contain an additional inReplyTo property whose value is an Array of one or more other Activity Stream Objects for which the object is to be considered a response. | [Activity Stream Schema](http://activitystrea.ms/head/activity-schema.html#comment) |
 | Collection | Represents a generic collection of objects of any type.  | [Activity Stream Schema](http://activitystrea.ms/head/activity-schema.html#collection) |
 
-The table below show how social media activities from different social media platforms map to Objects.
+The table below show how social media activities from different social media platforms map to the Activities chosen for use by the CLRecipe.
 
 | Platforms  | Note | Article | Comment | Collection |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
