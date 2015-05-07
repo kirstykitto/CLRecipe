@@ -40,14 +40,15 @@ Objects are items that are created on social media platforms. Blog posts, tweets
 | Comment | Represents a textual response to another object. Objects of this type MAY contain an additional inReplyTo property whose value is an Array of one or more other Activity Stream Objects for which the object is to be considered a response. | [Activity Stream Schema](http://activitystrea.ms/head/activity-schema.html#comment) |
 | Collection | Represents a generic collection of objects of any type.  | [Activity Stream Schema](http://activitystrea.ms/head/activity-schema.html#collection) |
 
-Object use by platform:
+The table below show how social media activities from different social media platforms map to Objects.
 
-|   | Note | Article | Comment |
-| ------------- | ------------- | ------------- | ------------- |
-| Facebook Group | Yes | Yes | Yes |
-| Google+ Group | Yes | Yes | Yes |
-| Twitter | Yes |  |  |
-| Blog | | Yes  | Yes |
+| Platforms  | Note | Article | Comment | Collection |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Twitter - Tweet | Yes |  |  |  |
+| Facebook - Post | Yes |  |  | |
+| Facebook Page |  | Yes |  | |
+| Blog Post | | Yes  | Yes | |
+| Pinterest | |  | Yes | Yes |
 
 ### Verbs
 
