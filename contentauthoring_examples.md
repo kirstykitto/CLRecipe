@@ -7,7 +7,7 @@
   "actor": {
     "objecttype": "Agent",
     "account": {
-      "homepage": "http://www.randomsyntax.com/",
+      "homepage": "http://www.syntaxspectrum.com/",
       "name": "aneesha"
     }
   },
@@ -18,7 +18,7 @@
     }
   },
   "object": {
-    "id": "https://twitter.com/aneesha/status/593190361255677952",
+    "id": "http://syntaxspectrum.com/2013/08/5-ways-coursera-has-advanced-the-mooc/",
     "objectType": "Article",
     "definition": {
       "name": {
@@ -40,7 +40,7 @@
   "actor": {
     "objecttype": "Agent",
     "account": {
-      "homepage": "http://www.randomsyntax.com/",
+      "homepage": "http://www.syntaxspectrum.com/",
       "name": "aneesha"
     }
   },
@@ -51,7 +51,7 @@
     }
   },
   "object": {
-    "id": "https://twitter.com/aneesha/status/593190361255677952",
+    "id": "http://syntaxspectrum.com/2013/08/5-ways-coursera-has-advanced-the-mooc/",
     "objectType": "Article",
     "definition": {
       "name": {

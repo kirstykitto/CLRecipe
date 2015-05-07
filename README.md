@@ -74,11 +74,11 @@ The table below show how actions from different social media platforms map to th
 ## Example xAPI Statements
 
 Examples xAPI statement are provided for:
-* (Microblogging)[https://github.com/kirstykitto/CLRecipe/blob/master/microblogging_examples.md]
-* (Content Creation)[https://github.com/kirstykitto/CLRecipe/blob/master/contentauthorng_examples.md]
-* (Collaborative Content Authoring)[https://github.com/kirstykitto/CLRecipe/blob/master/contentauthorng_examples.md]
-* (Content Curation)[https://github.com/kirstykitto/CLRecipe/blob/master/contentcuration_examples.md]
-* (Association with Course, Team and Instructor)[https://github.com/kirstykitto/CLRecipe/blob/master/contentcuration_examples.md]
+* [Microblogging](https://github.com/kirstykitto/CLRecipe/blob/master/microblogging_examples.md)
+* [Content Creation](https://github.com/kirstykitto/CLRecipe/blob/master/contentauthorng_examples.md)
+* [Collaborative Content Authoring](https://github.com/kirstykitto/CLRecipe/blob/master/contentauthorng_examples.md)
+* [Content Curation](https://github.com/kirstykitto/CLRecipe/blob/master/contentcuration_examples.md)
+* [Association with Course, Team and Instructor](https://github.com/kirstykitto/CLRecipe/blob/master/contentcuration_examples.md)
 
 ## Useful TinCan API Recipes
 * [SCORM to Tincan API Cookbook](http://tincanapi.com/scorm-to-tin-can-api-cookbook/)
