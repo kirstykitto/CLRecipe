@@ -1,6 +1,6 @@
 # CLRecipe - Social Media Recipes for TinCan API (xAPI)
 
-The [Connected Learning Analytics Toolkit](https://github.com/kirstykitto) imports social media associated with a learning activity into an LRS and performs advanced analytics. The recipes to model social media interaction as xAPI statements are shared for community contribution and feedback. Recipes for Microblogging, Content Authoring and Content Curation will be provided. 
+The [Connected Learning Analytics Toolkit](https://github.com/kirstykitto) imports social media associated with a learning activity into an LRS and performs advanced analytics. The recipes to model social media interaction as xAPI statements are shared for community contribution and feedback. Recipes for Microblogging, Content Authoring and Content Curation will be provided.
 
 Todo List:
 - [ ] Add content curation examples
@@ -24,7 +24,7 @@ Though social media platforms use different terminology, a common model of inter
 The CLRecipe provides the following guidelines for representing social media activity as xAPI statements:
 * That there is a distinction between Short Microblogging posts (i.e. using the Note object) and larger text articles (i.e. using the Article object for pages and blog posts).
 * The social media platform must be specified using the *content.Platform* property.
-* Tags, hashtags and @mentions that are included in a post must be included as *context.contextActivities.Other*. These items represent folksonomies created by the user. *context.contextActivities.Category* will be used by custom taxonomies that are created at a system level for enhanced reporting. 
+* Tags, hashtags and @mentions that are included in a post must be included as *context.contextActivities.Other*. These items represent folksonomies created by the user. *context.contextActivities.Category* will be used by custom taxonomies that are created at a system level for enhanced reporting.
 * Shares and likes must include a reference back to the object being shared or liked using *contect.contextActivities.Parent*. If the referenced id does not exist in the LRS it can be inserted using a substatement to represent the object.
 * Social media can be associated with a course using *context.contextActivities.Group*
 * Social media harvested from a group discussion area (i.e. Google+ Group or Facebook Group) must include *context.Team*.
@@ -81,14 +81,14 @@ Verb use by platform:
   "actor": {
     "objecttype": "Agent",
     "account": {
-      "homepage": "http://www.twitter.com/aneesha",
+      "homepage": "http://www.twitter.com/",
       "name": "aneesha"
     }
   },
   "verb": {
     "id": "http://activitystrea.ms/schema/1.0/create",
     "display": {
-      "en-US": "Create"
+      "en-US": "created"
     }
   },
   "object": {
@@ -115,14 +115,14 @@ Verb use by platform:
   "actor": {
     "objecttype": "Agent",
     "account": {
-      "homepage": "http://www.twitter.com/aneesha",
+      "homepage": "http://www.twitter.com/",
       "name": "aneesha"
     }
   },
   "verb": {
     "id": "http://activitystrea.ms/schema/1.0/create",
     "display": {
-      "en-US": "Create"
+      "en-US": "created"
     }
   },
   "object": {
@@ -182,14 +182,14 @@ Verb use by platform:
   "actor": {
     "objecttype": "Agent",
     "account": {
-      "homepage": "http://www.twitter.com/aneesha",
+      "homepage": "http://www.twitter.com/",
       "name": "aneesha"
     }
   },
   "verb": {
     "id": "http://activitystrea.ms/schema/1.0/share",
     "display": {
-      "en-US": "Share"
+      "en-US": "shared"
     }
   },
   "object": {
@@ -222,14 +222,14 @@ Verb use by platform:
   "actor": {
     "objecttype": "Agent",
     "account": {
-      "homepage": "http://www.twitter.com/aneesha",
+      "homepage": "http://www.twitter.com/",
       "name": "aneesha"
     }
   },
   "verb": {
     "id": "http://activitystrea.ms/schema/1.0/like",
     "display": {
-      "en-US": "Like"
+      "en-US": "liked"
     }
   },
   "object": {
@@ -261,14 +261,14 @@ Verb use by platform:
   "actor": {
     "objecttype": "Agent",
     "account": {
-      "homepage": "http://www.randomsyntax.com/about",
+      "homepage": "http://www.randomsyntax.com/",
       "name": "aneesha"
     }
   },
   "verb": {
     "id": "http://activitystrea.ms/schema/1.0/create",
     "display": {
-      "en-US": "Create"
+      "en-US": "created"
     }
   },
   "object": {
@@ -294,14 +294,14 @@ Verb use by platform:
   "actor": {
     "objecttype": "Agent",
     "account": {
-      "homepage": "http://www.randomsyntax.com/about",
+      "homepage": "http://www.randomsyntax.com/",
       "name": "aneesha"
     }
   },
   "verb": {
     "id": "http://activitystrea.ms/schema/1.0/create",
     "display": {
-      "en-US": "Create"
+      "en-US": "created"
     }
   },
   "object": {
@@ -373,14 +373,14 @@ Verb use by platform:
   "actor": {
     "objecttype": "Agent",
     "account": {
-      "homepage": "http://www.randomsyntax.com/about",
+      "homepage": "http://www.randomsyntax.com/",
       "name": "aneesha"
     }
   },
   "verb": {
     "id": "http://activitystrea.ms/schema/1.0/create",
     "display": {
-      "en-US": "Create"
+      "en-US": "created"
     }
   },
   "object": {
@@ -410,14 +410,14 @@ Verb use by platform:
   "actor": {
     "objecttype": "Agent",
     "account": {
-      "homepage": "http://www.randomsyntax.com/about",
+      "homepage": "http://www.randomsyntax.com/",
       "name": "aneesha"
     }
   },
   "verb": {
     "id": "http://activitystrea.ms/schema/1.0/create",
     "display": {
-      "en-US": "Create"
+      "en-US": "created"
     }
   },
   "object": {
@@ -431,13 +431,12 @@ Verb use by platform:
     }
   },
   "context": {
+    "instructor": {
+      "name": "Aneesha Bakharia",
+      "mbox": "test@mail.com"
+    },
     "platform": "WordPress",
-    "contextActivities": {
-      "group": {
-        "id": "ABC600",
-        "type": "http://adlnet.gov/expapi/activities/course"
-      }
-    }
+    "contextActivities": {}
   }
 }
 ```
@@ -448,14 +447,14 @@ Verb use by platform:
   "actor": {
     "objecttype": "Agent",
     "account": {
-      "homepage": "http://www.randomsyntax.com/about",
+      "homepage": "http://www.randomsyntax.com/",
       "name": "aneesha"
     }
   },
   "verb": {
     "id": "http://activitystrea.ms/schema/1.0/create",
     "display": {
-      "en-US": "Create"
+      "en-US": "created"
     }
   },
   "object": {
