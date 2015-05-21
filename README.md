@@ -3,7 +3,7 @@
 The [Connected Learning Analytics Toolkit](https://github.com/kirstykitto) imports social media associated with a learning activity into an LRS and performs advanced analytics. The recipes to model social media interaction as xAPI statements are shared for community contribution and feedback. Recipes for Microblogging, Content Authoring, Content Collaboration and Content Curation will be provided.
 
 Todo List:
-- [ ] Add content curation examples
+- [ ] Add content curation, content authoring and collaborative authoring examples
 - [ ] Add Contribute.md to outline how to contribute to project
 - [ ] Add examples as .json files
 - [ ] Register and get recipe id for recipe
@@ -13,7 +13,15 @@ Todo List:
 The CLRecipe project:
 *  maps terminology from various social media platforms to a common set of objects and verb
 *  provides an xAPI Recipe for building xAPI statement for modeling social media interactions that include the relationship between social media posts (i.e. reply, share and like) so that advanced analytics (including content analysis and social network analysis) can be performed
-*  provides xAPI recipe examples for Microblogging, Content Authoring, Content Collaboration and Content Curation
+*  provides xAPI recipe examples for:
+  * Microblogging
+  Microblogging occurs on platforms such as Twitter and Facebook where users are only allowed to post a short note with an enforced character limit.
+  * Content Authoring
+  Content Authoring refers to any long text that is written by a single user. A blog post make on Wordpress is an example.
+  * Content Collaboration
+  Platforms such as MediaWiki and Google Docs support content collaboration. On these platforms multiple authors are able to add, edit and delete content.
+  * Content Curation
+  Content Curation involves creating a collection of artefacts (e.g., documents, audio, video, images, etc).
 
 Though social media platforms use different terminology, a common model of interaction exists (see figure below). The model involves:
 * A user can create a post.
