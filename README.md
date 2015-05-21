@@ -61,8 +61,7 @@ The table below show how social media activities from different social media pla
 | Platforms  | Note | Article | Comment | Collection |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Twitter - Tweet | Yes |  |  |  |
-| Facebook - Post | Yes |  |  | |
-| Facebook Page |  | Yes |  | |
+| Facebook -  | Yes (Post) | Yes (Page)  |  | |
 | Blog Post | | Yes  | Yes | |
 | Pinterest | |  | Yes | Yes |
 
