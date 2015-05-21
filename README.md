@@ -97,11 +97,11 @@ An example xAPI statement based upon CLRecipe is provided below. The example is 
     }
   },
   "object": {
-    "id": "https://twitter.com/aneesha/status/593190361255677952",
+    "id": "https://twitter.com/aneesha/status/597971744180174848",
     "objectType": "Note",
     "definition": {
       "name": {
-        "en-US": "i'm having the worst luck with ordering electronic components online - orders arrive but are always missing crucial things"
+        "en-US": "making social learning (ephemeral social processes) analytics visible @sbuckshum #clatest"
       },
       "type": "http://activitystrea.ms/schema/1.0/note"
     }
@@ -116,7 +116,7 @@ An example xAPI statement based upon CLRecipe is provided below. The example is 
           "definition": {
             "type": "http://id.tincanapi.com/activitytype/tag",
             "name": {
-              "en-US": "tag2"
+              "en-US": "#clatest"
             }
           }
         },
@@ -126,17 +126,7 @@ An example xAPI statement based upon CLRecipe is provided below. The example is 
           "definition": {
             "type": "http://id.tincanapi.com/activitytype/tag",
             "name": {
-              "en-US": "tag2"
-            }
-          }
-        },
-        {
-          "id": "http://id.tincanapi.com/activity/tags/tincan",
-          "objecttype": "Activity",
-          "definition": {
-            "type": "http://id.tincanapi.com/activitytype/tag",
-            "name": {
-              "en-US": "@aneesha"
+              "en-US": "@sbuckshum"
             }
           }
         }
@@ -151,9 +141,9 @@ An example xAPI statement based upon CLRecipe is provided below. The example is 
 Examples xAPI statement are provided for:
 * [Microblogging](https://github.com/kirstykitto/CLRecipe/blob/master/microblogging_examples.md)
 * [Content Creation](https://github.com/kirstykitto/CLRecipe/blob/master/contentauthorng_examples.md)
-* [Collaborative Content Authoring](https://github.com/kirstykitto/CLRecipe/blob/master/contentauthorng_examples.md)
+* [Collaborative Content Authoring](https://github.com/kirstykitto/CLRecipe/blob/master/collaborativecontentauthorng_examples.md)
 * [Content Curation](https://github.com/kirstykitto/CLRecipe/blob/master/contentcuration_examples.md)
-* [Association with Course, Team and Instructor](https://github.com/kirstykitto/CLRecipe/blob/master/contentcuration_examples.md)
+* [Association with Course, Team and Instructor](https://github.com/kirstykitto/CLRecipe/blob/master/associatewithcourseteaminstructor_examples.md)
 
 ## Useful TinCan API Recipes
 * [SCORM to Tincan API Cookbook](http://tincanapi.com/scorm-to-tin-can-api-cookbook/)
