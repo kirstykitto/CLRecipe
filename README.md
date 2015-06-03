@@ -147,10 +147,10 @@ An example xAPI statement based upon CLRecipe is provided below. The example is 
 
 Examples xAPI statement are provided for:
 * [Microblogging](https://github.com/kirstykitto/CLRecipe/blob/master/microblogging_examples.md)
-* [Content Creation](https://github.com/kirstykitto/CLRecipe/blob/master/contentauthorng_examples.md)
-* [Collaborative Content Authoring](https://github.com/kirstykitto/CLRecipe/blob/master/collaborativecontentauthorng_examples.md)
+* [Content Creation](https://github.com/kirstykitto/CLRecipe/blob/master/contentauthoring_examples.md)
+* [Collaborative Content Authoring](https://github.com/kirstykitto/CLRecipe/blob/master/collaborativecontentauthoring_examples.md)
 * [Content Curation](https://github.com/kirstykitto/CLRecipe/blob/master/contentcuration_examples.md)
-* [Association with Course, Team and Instructor](https://github.com/kirstykitto/CLRecipe/blob/master/associatewithcourseteaminstructor_examples.md)
+* [Association with Course, Team and Instructor](https://github.com/kirstykitto/CLRecipe/blob/master/associationwithcourseteaminstuctor_examples.md)
 
 ## Useful TinCan API Recipes
 * [SCORM to Tincan API Cookbook](http://tincanapi.com/scorm-to-tin-can-api-cookbook/)
