@@ -2,37 +2,44 @@
 
 ## Microblogging Examples
 
+Json files for each example are in the microblogging folder.
+
 * Create a Tweet
 
 ```json
 {
-  "actor": {
-    "objecttype": "Agent",
-    "account": {
-      "homepage": "http://www.twitter.com/",
-      "name": "aneesha"
+    "actor": {
+        "account": {
+            "homePage": "http://www.twitter.com",
+            "name": "aneesha"
+        },
+        "objectType": "Agent"
+    },
+    "context": {
+        "contextActivities": {
+            "grouping": [],
+            "other": [],
+            "parent": []
+        },
+        "platform": "Twitter",
+        "registration": "3758473f-2320-494a-85a4-50288f9346a8"
+    },
+    "object": {
+        "definition": {
+            "name": {
+                "en-US": "Just discovered Sirius - a graphical modeling workbench http://www.eclipse.org/sirius/overview.html"
+            },
+            "type": "http://activitystrea.ms/schema/1.0/note"
+        },
+        "id": "https://twitter.com/aneesha/status/605894039666171904",
+        "objectType": "Activity"
+    },
+    "verb": {
+        "display": {
+            "en-US": "created"
+        },
+        "id": "http://activitystrea.ms/schema/1.0/create"
     }
-  },
-  "verb": {
-    "id": "http://activitystrea.ms/schema/1.0/create",
-    "display": {
-      "en-US": "created"
-    }
-  },
-  "object": {
-    "id": "https://twitter.com/aneesha/status/593190361255677952",
-    "objectType": "Note",
-    "definition": {
-      "name": {
-        "en-US": "i'm having the worst luck with ordering electronic components online - orders arrive but are always missing crucial things"
-      },
-      "type": "http://activitystrea.ms/schema/1.0/note"
-    }
-  },
-  "context": {
-    "platform": "Twitter",
-    "contextActivities": {}
-  }
 }
 ```
 
@@ -40,66 +47,59 @@
 
 ```json
 {
-  "actor": {
-    "objecttype": "Agent",
-    "account": {
-      "homepage": "http://www.twitter.com/",
-      "name": "aneesha"
-    }
-  },
-  "verb": {
-    "id": "http://activitystrea.ms/schema/1.0/create",
-    "display": {
-      "en-US": "created"
-    }
-  },
-  "object": {
-    "id": "https://twitter.com/aneesha/status/593190361255677952",
-    "objectType": "Note",
-    "definition": {
-      "name": {
-        "en-US": "i'm having the worst luck with ordering electronic components online - orders arrive but are always missing crucial things"
-      },
-      "type": "http://activitystrea.ms/schema/1.0/note"
-    }
-  },
-  "context": {
-    "platform": "Twitter",
-    "contextActivities": {
-      "other": [
-        {
-          "id": "http://id.tincanapi.com/activity/tags/tincan",
-          "objecttype": "Activity",
-          "definition": {
-            "type": "http://id.tincanapi.com/activitytype/tag",
-            "name": {
-              "en-US": "tag2"
-            }
-          }
+    "actor": {
+        "account": {
+            "homePage": "http://www.twitter.com",
+            "name": "aneesha"
         },
-        {
-          "id": "http://id.tincanapi.com/activity/tags/tincan",
-          "objecttype": "Activity",
-          "definition": {
-            "type": "http://id.tincanapi.com/activitytype/tag",
-            "name": {
-              "en-US": "tag2"
-            }
-          }
+        "objectType": "Agent"
+    },
+    "context": {
+        "contextActivities": {
+            "grouping": [],
+            "other": [
+                {
+                    "definition": {
+                        "name": {
+                            "en-US": "@sbuckshum"
+                        },
+                        "type": "http://id.tincanapi.com/activitytype/tag"
+                    },
+                    "id": "http://id.tincanapi.com/activity/tags/tincan",
+                    "objectType": "Activity"
+                },
+                {
+                    "definition": {
+                        "name": {
+                            "en-US": "#clatest"
+                        },
+                        "type": "http://id.tincanapi.com/activitytype/tag"
+                    },
+                    "id": "http://id.tincanapi.com/activity/tags/tincan",
+                    "objectType": "Activity"
+                }
+            ],
+            "parent": []
         },
-        {
-          "id": "http://id.tincanapi.com/activity/tags/tincan",
-          "objecttype": "Activity",
-          "definition": {
-            "type": "http://id.tincanapi.com/activitytype/tag",
+        "platform": "Twitter",
+        "registration": "b234b0fc-5f53-4b4b-810b-c52bc65dbf8d"
+    },
+    "object": {
+        "definition": {
             "name": {
-              "en-US": "@aneesha"
-            }
-          }
-        }
-      ]
+                "en-US": "making social learning (ephemeral social processes) analytics visible @sbuckshum #clatest"
+            },
+            "type": "http://activitystrea.ms/schema/1.0/note"
+        },
+        "id": "https://twitter.com/aneesha/status/597971744180174848",
+        "objectType": "Activity"
+    },
+    "verb": {
+        "display": {
+            "en-US": "created"
+        },
+        "id": "http://activitystrea.ms/schema/1.0/create"
     }
-  }
 }
 ```
 
@@ -107,75 +107,126 @@
 
 ```json
 {
-  "actor": {
-    "objecttype": "Agent",
-    "account": {
-      "homepage": "http://www.twitter.com/",
-      "name": "aneesha"
+    "actor": {
+        "account": {
+            "homePage": "http://www.twitter.com",
+            "name": "aneesha"
+        },
+        "objectType": "Agent"
+    },
+    "context": {
+        "contextActivities": {
+            "grouping": [],
+            "other": [],
+            "parent": [
+                {
+                    "objectType": "Activity"
+                }
+            ]
+        },
+        "platform": "Twitter",
+        "registration": "943fbb47-1c38-42ff-a321-8aff6605d657"
+    },
+    "object": {
+        "definition": {
+            "name": {
+                "en-US": "Congrats to Facebook on their new Paris lab. "
+            },
+            "type": "http://activitystrea.ms/schema/1.0/note"
+        },
+        "id": "https://twitter.com/BaiduResearch/status/605777762893185026",
+        "objectType": "Activity"
+    },
+    "verb": {
+        "display": {
+            "en-US": "shared"
+        },
+        "id": "http://activitystrea.ms/schema/1.0/share"
     }
-  },
-  "verb": {
-    "id": "http://activitystrea.ms/schema/1.0/share",
-    "display": {
-      "en-US": "shared"
+}
+```
+
+* Retweet with a comment
+```json
+{
+    "actor": {
+        "account": {
+            "homePage": "http://www.twitter.com",
+            "name": "aneesha"
+        },
+        "objectType": "Agent"
+    },
+    "context": {
+        "contextActivities": {
+            "grouping": [],
+            "other": [],
+            "parent": [
+                {
+                    "id": "https://twitter.com/pythontrending/status/605831255490334722",
+                    "objectType": "Activity"
+                }
+            ]
+        },
+        "platform": "Twitter",
+        "registration": "48e8d97e-8264-44c4-95b9-ded43ea4463e"
+    },
+    "object": {
+        "definition": {
+            "name": {
+                "en-US": "looks useful for neural nets on theano"
+            },
+            "type": "http://activitystrea.ms/schema/1.0/note"
+        },
+        "id": "https://twitter.com/aneesha/status/605898487125803009",
+        "objectType": "Activity"
+    },
+    "verb": {
+        "display": {
+            "en-US": "shared"
+        },
+        "id": "http://activitystrea.ms/schema/1.0/share"
     }
-  },
-  "object": {
-    "id": "https://twitter.com/aneesha/status/593190361255677952",
-    "objectType": "Note",
-    "definition": {
-      "name": {
-        "en-US": "i'm having the worst luck with ordering electronic components online - orders arrive but are always missing crucial things"
-      },
-      "type": "http://activitystrea.ms/schema/1.0/note"
-    }
-  },
-  "context": {
-    "platform": "Twitter",
-    "contextActivities": {
-      "parent": {
-        "id": "https://twitter.com/aneesha/status/593190361255677952",
-        "objecttype": "Note"
-      }
-    }
-  }
 }
 ```
 
 * Favorite (or Like) a Tweet
 ```json
 {
-  "actor": {
-    "objecttype": "Agent",
-    "account": {
-      "homepage": "http://www.twitter.com/",
-      "name": "aneesha"
+    "actor": {
+        "account": {
+            "homePage": "http://www.twitter.com",
+            "name": "aneesha"
+        },
+        "objectType": "Agent"
+    },
+    "context": {
+        "contextActivities": {
+            "grouping": [],
+            "other": [],
+            "parent": [
+                {
+                    "objectType": "Activity"
+                }
+            ]
+        },
+        "platform": "Twitter",
+        "registration": "505130f5-43cc-4f76-a679-ec670805c8f4"
+    },
+    "object": {
+        "definition": {
+            "name": {
+                "en-US": "9 Designer Tools Everyone Should Know About http://rightrelevance.com/tw/datavizrr/9b88cfbecdf36bcf07bd0e7ba7ca54c0af87a9c4/data%20visualization/data%20visualization"
+            },
+            "type": "http://activitystrea.ms/schema/1.0/note"
+        },
+        "id": "https://twitter.com/DataVizRR/status/605892458413580288",
+        "objectType": "Activity"
+    },
+    "verb": {
+        "display": {
+            "en-US": "liked"
+        },
+        "id": "http://activitystrea.ms/schema/1.0/like"
     }
-  },
-  "verb": {
-    "id": "http://activitystrea.ms/schema/1.0/like",
-    "display": {
-      "en-US": "liked"
-    }
-  },
-  "object": {
-    "id": "https://twitter.com/aneesha/status/593190361255677952",
-    "objectType": "Note",
-    "definition": {
-      "name": {
-        "en-US": ""
-      },
-      "type": "http://activitystrea.ms/schema/1.0/note"
-    }
-  },
-  "context": {
-    "platform": "Twitter",
-    "contextActivities": {
-      "parent": {
-        "id": "https://twitter.com/aneesha/status/593190361255677952",
-        "objecttype": "Note"
-      }
-    }
-  }
 }
 ```

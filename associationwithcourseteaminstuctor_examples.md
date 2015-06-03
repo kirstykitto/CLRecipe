@@ -2,113 +2,94 @@
 
 
 ## Associating Social Media Statement with a Course, Team (or Group) and Instructor
+
+Json files for each example are in the courseteaminstructor folder.
+
 * Associating with an Instructor
 ```json
 {
-  "actor": {
-    "objecttype": "Agent",
-    "account": {
-      "homepage": "http://www.syntaxspectrum.com/",
-      "name": "aneesha"
-    }
-  },
-  "verb": {
-    "id": "http://activitystrea.ms/schema/1.0/create",
-    "display": {
-      "en-US": "created"
-    }
-  },
-  "object": {
-    "id": "http://syntaxspectrum.com/2013/08/5-ways-coursera-has-advanced-the-mooc/",
-    "objectType": "Article",
-    "definition": {
-      "name": {
-        "en-US": "Blog post text"
-      },
-      "type": "http://activitystrea.ms/schema/1.0/article"
-    }
-  },
-  "context": {
-    "instructor": {
-      "name": "Aneesha Bakharia",
-      "mbox": "test@mail.com"
+    "actor": {
+        "account": {
+            "homePage": "http://www.twitter.com",
+            "name": "aneesha"
+        },
+        "objectType": "Agent"
     },
-    "platform": "WordPress",
-    "contextActivities": {}
-  }
+    "context": {
+        "contextActivities": {
+            "grouping": [],
+            "other": [],
+            "parent": []
+        },
+        "instructor": {
+            "mbox": "mailto:email@test.com",
+            "name": "Kirty Kitto",
+            "objectType": "Agent"
+        },
+        "platform": "Twitter",
+        "registration": "9fedac48-8e48-428b-b7e8-60d8088a476b"
+    },
+    "object": {
+        "definition": {
+            "name": {
+                "en-US": "Just discovered Sirius - a graphical modeling workbench http://www.eclipse.org/sirius/overview.html"
+            },
+            "type": "http://activitystrea.ms/schema/1.0/note"
+        },
+        "id": "https://twitter.com/aneesha/status/605894039666171904",
+        "objectType": "Activity"
+    },
+    "verb": {
+        "display": {
+            "en-US": "created"
+        },
+        "id": "http://activitystrea.ms/schema/1.0/create"
+    }
 }
 ```
 
 * Associate with a Course
 ```json
 {
-  "actor": {
-    "objecttype": "Agent",
-    "account": {
-      "homepage": "http://www.syntaxspectrum.com/",
-      "name": "aneesha"
-    }
-  },
-  "verb": {
-    "id": "http://activitystrea.ms/schema/1.0/create",
-    "display": {
-      "en-US": "created"
-    }
-  },
-  "object": {
-    "id": "http://syntaxspectrum.com/2013/08/5-ways-coursera-has-advanced-the-mooc/",
-    "objectType": "Article",
-    "definition": {
-      "name": {
-        "en-US": "Blog post text"
-      },
-      "type": "http://activitystrea.ms/schema/1.0/article"
-    }
-  },
-  "context": {
-    "instructor": {
-      "name": "Aneesha Bakharia",
-      "mbox": "test@mail.com"
+    "actor": {
+        "account": {
+            "homePage": "http://www.twitter.com",
+            "name": "aneesha"
+        },
+        "objectType": "Agent"
     },
-    "platform": "WordPress",
-    "contextActivities": {}
-  }
-}
-```
-
-* Associate with a Team or Group
-```json
-{
-  "actor": {
-    "objecttype": "Agent",
-    "account": {
-      "homepage": "http://www.syntaxspectrum.com/",
-      "name": "aneesha"
-    }
-  },
-  "verb": {
-    "id": "http://activitystrea.ms/schema/1.0/create",
-    "display": {
-      "en-US": "created"
-    }
-  },
-  "object": {
-    "id": "http://syntaxspectrum.com/2013/08/5-ways-coursera-has-advanced-the-mooc/",
-    "objectType": "Article",
-    "definition": {
-      "name": {
-        "en-US": "Blog post text"
-      },
-      "type": "http://activitystrea.ms/schema/1.0/article"
-    }
-  },
-  "context": {
-    "platform": "WordPress",
-    "team": {
-      "name": "Tut Group 1",
-      "objectType": "Group"
+    "context": {
+        "contextActivities": {
+            "grouping": [
+                {
+                    "definition": {
+                        "type": "http://adlnet.gov/expapi/activities/course"
+                    },
+                    "id": "ABC101",
+                    "objectType": "Activity"
+                }
+            ],
+            "other": [],
+            "parent": []
+        },
+        "platform": "Twitter",
+        "registration": "a219cc67-acd3-4e3b-82c9-3fda9146b21c"
     },
-    "contextActivities": {}
-  }
+    "object": {
+        "definition": {
+            "name": {
+                "en-US": "Just discovered Sirius - a graphical modeling workbench http://www.eclipse.org/sirius/overview.html"
+            },
+            "type": "http://activitystrea.ms/schema/1.0/note"
+        },
+        "id": "https://twitter.com/aneesha/status/605894039666171904",
+        "objectType": "Activity"
+    },
+    "verb": {
+        "display": {
+            "en-US": "created"
+        },
+        "id": "http://activitystrea.ms/schema/1.0/create"
+    }
 }
 ```
