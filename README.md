@@ -90,56 +90,59 @@ An example xAPI statement based upon CLRecipe is provided below. The example is 
 
 ```json
 {
-  "actor": {
-    "objecttype": "Agent",
-    "account": {
-      "homepage": "http://www.twitter.com/",
-      "name": "aneesha"
-    }
-  },
-  "verb": {
-    "id": "http://activitystrea.ms/schema/1.0/create",
-    "display": {
-      "en-US": "created"
-    }
-  },
-  "object": {
-    "id": "https://twitter.com/aneesha/status/597971744180174848",
-    "objectType": "Note",
-    "definition": {
-      "name": {
-        "en-US": "making social learning (ephemeral social processes) analytics visible @sbuckshum #clatest"
-      },
-      "type": "http://activitystrea.ms/schema/1.0/note"
-    }
-  },
-  "context": {
-    "platform": "Twitter",
-    "contextActivities": {
-      "other": [
-        {
-          "id": "http://id.tincanapi.com/activity/tags/tincan",
-          "objecttype": "Activity",
-          "definition": {
-            "type": "http://id.tincanapi.com/activitytype/tag",
-            "name": {
-              "en-US": "#clatest"
-            }
-          }
+    "actor": {
+        "account": {
+            "homePage": "http://www.twitter.com",
+            "name": "aneesha"
         },
-        {
-          "id": "http://id.tincanapi.com/activity/tags/tincan",
-          "objecttype": "Activity",
-          "definition": {
-            "type": "http://id.tincanapi.com/activitytype/tag",
+        "objectType": "Agent"
+    },
+    "context": {
+        "contextActivities": {
+            "grouping": [],
+            "other": [
+                {
+                    "definition": {
+                        "name": {
+                            "en-US": "@sbuckshum"
+                        },
+                        "type": "http://id.tincanapi.com/activitytype/tag"
+                    },
+                    "id": "http://id.tincanapi.com/activity/tags/tincan",
+                    "objectType": "Activity"
+                },
+                {
+                    "definition": {
+                        "name": {
+                            "en-US": "#clatest"
+                        },
+                        "type": "http://id.tincanapi.com/activitytype/tag"
+                    },
+                    "id": "http://id.tincanapi.com/activity/tags/tincan",
+                    "objectType": "Activity"
+                }
+            ],
+            "parent": []
+        },
+        "platform": "Twitter",
+        "registration": "b234b0fc-5f53-4b4b-810b-c52bc65dbf8d"
+    },
+    "object": {
+        "definition": {
             "name": {
-              "en-US": "@sbuckshum"
-            }
-          }
-        }
-      ]
+                "en-US": "making social learning (ephemeral social processes) analytics visible @sbuckshum #clatest"
+            },
+            "type": "http://activitystrea.ms/schema/1.0/note"
+        },
+        "id": "https://twitter.com/aneesha/status/597971744180174848",
+        "objectType": "Activity"
+    },
+    "verb": {
+        "display": {
+            "en-US": "created"
+        },
+        "id": "http://activitystrea.ms/schema/1.0/create"
     }
-  }
 }
 ```
 
