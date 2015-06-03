@@ -42,7 +42,7 @@ The Recipe for representing social media activity as xAPI statements prescribes 
 * Imported social media harvested from a group discussion area (i.e. Google+ Group or Facebook Group) must include *context.Team*.
 
 Option additions to the recipe to facilitate reporting by course and instructor include:
-* Imported social media should be associated with a course using *context.contextActivities.Group*.
+* Imported social media should be associated with a course using *context.contextActivities.Grouping*.
 * Imported social media should be associated with an instructor using *context.Instructor*.
 
 ### Activities
