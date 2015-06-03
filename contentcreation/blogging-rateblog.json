@@ -1,0 +1,39 @@
+{
+    "actor": {
+        "account": {
+            "homePage": "http://www.syntaxspectrum.com/",
+            "name": "aneesha"
+        },
+        "objectType": "Agent"
+    },
+    "context": {
+        "contextActivities": {
+            "grouping": [],
+            "other": [],
+            "parent": []
+        },
+        "platform": "WordPress",
+        "registration": "b8f67074-26ab-44d4-beb7-67e7f45f329a"
+    },
+    "object": {
+        "definition": {
+            "name": {
+                "en-US": "5 Ways Coursera has Advanced the MOOC"
+            },
+            "type": "http://activitystrea.ms/schema/1.0/article"
+        },
+        "id": "http://syntaxspectrum.com/2013/08/5-ways-coursera-has-advanced-the-mooc/",
+        "objectType": "Activity"
+    },
+    "result": {
+        "score": {
+            "raw": 5.0
+        }
+    },
+    "verb": {
+        "display": {
+            "en-US": "rated"
+        },
+        "id": "http://id.tincanapi.com/verb/rated"
+    }
+}

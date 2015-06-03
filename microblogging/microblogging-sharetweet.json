@@ -1,0 +1,38 @@
+{
+    "actor": {
+        "account": {
+            "homePage": "http://www.twitter.com",
+            "name": "aneesha"
+        },
+        "objectType": "Agent"
+    },
+    "context": {
+        "contextActivities": {
+            "grouping": [],
+            "other": [],
+            "parent": [
+                {
+                    "objectType": "Activity"
+                }
+            ]
+        },
+        "platform": "Twitter",
+        "registration": "943fbb47-1c38-42ff-a321-8aff6605d657"
+    },
+    "object": {
+        "definition": {
+            "name": {
+                "en-US": "Congrats to Facebook on their new Paris lab. "
+            },
+            "type": "http://activitystrea.ms/schema/1.0/note"
+        },
+        "id": "https://twitter.com/BaiduResearch/status/605777762893185026",
+        "objectType": "Activity"
+    },
+    "verb": {
+        "display": {
+            "en-US": "shared"
+        },
+        "id": "http://activitystrea.ms/schema/1.0/share"
+    }
+}
