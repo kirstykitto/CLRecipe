@@ -1,6 +1,6 @@
 # CLRecipe - Social Media Recipes for TinCan API (xAPI)
 
-## Content Authoring Examples
+## Content Creation Examples
 
 Json files for each example are in the contentauthoring folder.
 
