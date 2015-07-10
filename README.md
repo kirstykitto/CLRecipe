@@ -87,7 +87,7 @@ Verbs are actions that are performed on an object. Most of the verbs used in the
 The table below show how actions from different social media platforms map to the Verbs chosen for use in the CLRecipe.
 
 |   | Create | Like | Share | Tag | Rate | Comment | Add |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Facebook | Post | Like | Share | Tag | - | Reply | - |
 | Google+ | Post | Like | Share | Tag | - | Reply | - |
 | Twitter | Tweet | Favorite | Retweet | Hashtag | - | - |
