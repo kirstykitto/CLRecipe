@@ -3,9 +3,11 @@
 The [Connected Learning Analytics Toolkit](https://github.com/kirstykitto) imports social media associated with a learning activity into an LRS and performs advanced analytics. The recipes to model social media interaction as xAPI statements are shared for community contribution and feedback. Recipes for Microblogging, Content Authoring, Content Collaboration and Content Curation will be provided.
 
 Todo List:
-- [ ] Add content curation, content authoring and collaborative authoring examples
+- [X] Add content curation examples
+- [X] Add content authoring examples
+- [ ] Add collaborative authoring examples
 - [ ] Add Contribute.md to outline how to contribute to project
-- [ ] Add examples as .json files
+- [X] Add examples as .json files
 - [ ] Register and get recipe id for recipe
 
 ## Modeling Social Media Interaction as an xAPI statement
