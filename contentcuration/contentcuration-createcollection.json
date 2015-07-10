@@ -1,0 +1,38 @@
+{
+    "actor": {
+        "account": {
+            "homePage": "https://www.pinterest.com",
+            "name": "aneeshabakharia"
+        },
+        "mbox": "mailto:aneesha.bakharia@gmail.com",
+        "name": "Aneesha Bakharia",
+        "objectType": "Agent"
+    },
+    "context": {
+        "contextActivities": {
+            "grouping": [],
+            "other": [],
+            "parent": []
+        },
+        "platform": "Pinterest",
+        "registration": "8cb81677-2efe-4bc6-be80-72ff86c68f9e"
+    },
+    "object": {
+        "definition": {
+            "name": {
+                "en-US": "Social Network Analysis"
+            },
+            "type": "http://activitystrea.ms/head/activity-schema.html#collection"
+        },
+        "id": "https://www.pinterest.com/aneeshabakharia/social-network-analysis/",
+        "objectType": "Activity"
+    },
+    "timestamp": "2015-07-10T11:51:04.658690",
+    "verb": {
+        "display": {
+            "en-US": "created"
+        },
+        "id": "http://activitystrea.ms/schema/1.0/create"
+    },
+    "version": "1.0.1"
+}
