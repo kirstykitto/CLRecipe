@@ -55,6 +55,12 @@ Activities are items that are created on social media platforms. Blog posts, twe
 | Article | Represents objects such as news articles, knowledge base entries, or other similar construct. Such objects generally consist of paragraphs of text, in some cases incorporating embedded media such as photos and inline hyperlinks to other resources.  | [Activity Stream Schema](http://activitystrea.ms/head/activity-schema.html#article) |
 | Comment | Represents a textual response to another object. Objects of this type MAY contain an additional inReplyTo property whose value is an Array of one or more other Activity Stream Objects for which the object is to be considered a response. | [Activity Stream Schema](http://activitystrea.ms/head/activity-schema.html#comment) |
 | Collection | Represents a generic collection of objects of any type.  | [Activity Stream Schema](http://activitystrea.ms/head/activity-schema.html#collection) |
+| Audio | Represents audio content of any kind.  | [Activity Stream Schema](http://activitystrea.ms/schema/1.0/audio) |
+| File | Represents any form of document or file. | [Activity Stream Schema](http://activitystrea.ms/schema/1.0/file) |
+| Image | Represents a graphical image.  | [Activity Stream Schema](http://activitystrea.ms/schema/1.0/image) |
+| Video | Represents video content of any kind. | [Activity Stream Schema](http://activitystrea.ms/schema/1.0/video) |
+| Link | The URL to another resource.   | [Activity Stream Schema](http://adlnet.gov/expapi/activities/link) |
+
 
 The table below show how social media activities from different social media platforms map to the Activities chosen for use by the CLRecipe.
 
@@ -76,15 +82,17 @@ Verbs are actions that are performed on an object. Most of the verbs used in the
 | Share  | Indicates that the actor has called out the object to readers. In most cases, the actor did not create the object being shared, but is instead drawing attention to it.  | [Activity Stream Schema](http://activitystrea.ms/schema/1.0/share) |
 | Tag  | Activity generally used in the "other" or "grouping" Context Activities lists to mark a statement as being related to a particular subject area. Implemented as a one word identifier used for search filtering or tag cloud generation. Includes hashtagging for tweets. | [TINCAN API](http://activitystrea.ms/schema/1.0/tag) |
 | Rate  | Action of giving a rating to an object. In general the rating should be included in the Result with a Score object. There is an extension to include the 'raw' value as well as 'min' and 'max' range indicators. | [TINCAN API](http://id.tincanapi.com/verb/rated) & [TINCAN Quality Rating Extension](http://id.tincanapi.com/extension/quality-rating) |
+| Add  | Indicates that the actor has added the object to the target. For instance, adding a photo to an album.  | [Activity Stream Schema](http://activitystrea.ms/schema/1.0/add) |
 
 The table below show how actions from different social media platforms map to the Verbs chosen for use in the CLRecipe.
 
-|   | Create | Like | Share | Tag | Rate | Comment |
+|   | Create | Like | Share | Tag | Rate | Comment | Add |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Facebook | Post | Like | Share | Tag | - | Reply |
-| Google+ | Post | Like | Share | Tag | - | Reply |
+| Facebook | Post | Like | Share | Tag | - | Reply | - |
+| Google+ | Post | Like | Share | Tag | - | Reply | - |
 | Twitter | Tweet | Favorite | Retweet | Hashtag | - | - |
-| Blog | Post | - | - | Tag | Rate | Comment |
+| Blog | Post | - | - | Tag | Rate | Comment | - |
+| Pinterest | Board | Like | Share | - | - | - | Pin |
 
 An example xAPI statement based upon CLRecipe is provided below. The example is for a Twitter tweet that includes hashtags and mentions:
 
