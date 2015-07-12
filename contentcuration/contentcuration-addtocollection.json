@@ -12,10 +12,15 @@
         "contextActivities": {
             "grouping": [],
             "other": [],
-            "parent": []
+            "parent": [
+                {
+                    "id": "https://twitter.com/pythontrending/status/605831255490334722",
+                    "objectType": "Activity"
+                }
+            ]
         },
         "platform": "Pinterest",
-        "registration": "c75fb8c2-9091-4f70-958b-fe0dff8d1f97"
+        "registration": "601e8dfa-b92c-4372-8147-59a24c57c168"
     },
     "object": {
         "definition": {
@@ -27,7 +32,7 @@
         "id": "https://www.pinterest.com/aneeshabakharia/social-network-analysis/",
         "objectType": "Activity"
     },
-    "timestamp": "2015-07-10T11:51:04.658690",
+    "timestamp": "2015-07-13T09:19:08.955403",
     "verb": {
         "display": {
             "en-US": "added"
