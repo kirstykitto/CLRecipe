@@ -62,6 +62,7 @@ Activities are items that are created on social media platforms. Blog posts, twe
 | Image | Represents a graphical image.  | [Activity Stream Schema](http://activitystrea.ms/schema/1.0/image) |
 | Video | Represents video content of any kind. | [Activity Stream Schema](http://activitystrea.ms/schema/1.0/video) |
 | Link | The URL to another resource.   | [Activity Stream Schema](http://adlnet.gov/expapi/activities/link) |
+| Bookmark | Represents a pointer to some URL.   | [Activity Stream Schema](http://activitystrea.ms/schema/1.0/bookmark) |
 
 
 The table below show how social media activities from different social media platforms map to the Activities chosen for use by the CLRecipe.
