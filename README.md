@@ -102,7 +102,7 @@ The table below show how actions from different social media platforms map to th
 | Blog | Post | - | - | Tag | Rate | Comment | - | - | - |
 | Pinterest | Board | Like | Share | - | - | - | Pin | - | - |
 | YouTube | - | - | - | - | - | Comment | - | - | - |
-| GitHub | - | - | - | - | - | - | - | Remove file | Modify file |
+| GitHub | Commit | - | - | - | - | Comment on commit and issue | Add file | Remove file | Modify file |
 
 An example xAPI statement based upon CLRecipe is provided below. The example is for a Twitter tweet that includes hashtags and mentions:
 
