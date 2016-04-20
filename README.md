@@ -73,6 +73,9 @@ The table below show how social media activities from different social media pla
 | Facebook -  | Yes (Post) | Yes (Page)  |  | |
 | Blog Post | | Yes  | Yes | |
 | Pinterest | |  | Yes | Yes |
+| YouTube | |  | Yes | |
+| GitHub - Commit | |  | | Yes |
+| GitHub - Issue | Yes |  | | |
 
 ### Verbs
 
@@ -86,16 +89,20 @@ Verbs are actions that are performed on an object. Most of the verbs used in the
 | Tag  | Activity generally used in the "other" or "grouping" Context Activities lists to mark a statement as being related to a particular subject area. Implemented as a one word identifier used for search filtering or tag cloud generation. Includes hashtagging for tweets. | [TINCAN API](http://activitystrea.ms/schema/1.0/tag) |
 | Rate  | Action of giving a rating to an object. In general the rating should be included in the Result with a Score object. There is an extension to include the 'raw' value as well as 'min' and 'max' range indicators. | [TINCAN API](http://id.tincanapi.com/verb/rated) & [TINCAN Quality Rating Extension](http://id.tincanapi.com/extension/quality-rating) |
 | Add  | Indicates that the actor has added the object to the target. For instance, adding a photo to an album.  | [Activity Stream Schema](http://activitystrea.ms/schema/1.0/add) |
+| Remove  | Indicates that the actor has removed the object from the target.  | [Activity Stream Schema](http://activitystrea.ms/schema/1.0/remove) |
+| Update  | The "update" verb indicates that the actor has modified the object. Use of the "update" verb is generally reserved to indicate modifications to existing objects or data such as changing an existing user's profile information.  | [Activity Stream Schema](http://activitystrea.ms/schema/1.0/update) |
 
 The table below show how actions from different social media platforms map to the Verbs chosen for use in the CLRecipe.
 
-|   | Create | Like | Share | Tag | Rate | Comment | Add |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Facebook | Post | Like | Share | Tag | - | Reply | - |
-| Google+ | Post | Like | Share | Tag | - | Reply | - |
-| Twitter | Tweet | Favorite | Retweet | Hashtag | - | - |
-| Blog | Post | - | - | Tag | Rate | Comment | - |
-| Pinterest | Board | Like | Share | - | - | - | Pin |
+|   | Create | Like | Share | Tag | Rate | Comment | Add | Remove | Update |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |  ------------- |------------- | ------------- |
+| Facebook | Post | Like | Share | Tag | - | Reply | - | - | - |
+| Google+ | Post | Like | Share | Tag | - | Reply | - | - | - |
+| Twitter | Tweet | Favorite | Retweet | Hashtag | - | - | - | - |
+| Blog | Post | - | - | Tag | Rate | Comment | - | - | - |
+| Pinterest | Board | Like | Share | - | - | - | Pin | - | - |
+| YouTube | - | - | - | - | - | Comment | - | - | - |
+| GitHub | Commit | - | - | - | - | Comment on commit and issue | Add file | Remove file | Modify file |
 
 An example xAPI statement based upon CLRecipe is provided below. The example is for a Twitter tweet that includes hashtags and mentions:
 
